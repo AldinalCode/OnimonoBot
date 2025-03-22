@@ -2,7 +2,7 @@
 
 
 ## 🌐 Website
-Kunjungi website kami: [Onimono.Com](https://onimono.com)
+Kunjungi website kami: [Onimono.Com](onimono.com)
 
 ---
 
