@@ -1,0 +1,15 @@
+# Lingkungan virtual
+venv/
+.env
+
+# File log
+*.log
+
+# Cache Python
+__pycache__/
+*.py[cod]
+
+# File sementara editor
+*.swp
+*.swo
+*~
