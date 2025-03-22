@@ -1,7 +1,5 @@
 # 🤖 OnimonoBot - Bot Telegram untuk Mengunduh File
 
-![OnimonoBot Logo](https://via.placeholder.com/150)  
-*(Ganti placeholder dengan logo bot kamu jika ada)*
 
 ## 🌐 Website
 Kunjungi website kami: [Onimono.Com](https://onimono.com)
