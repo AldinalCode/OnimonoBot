@@ -167,7 +167,7 @@ async def handle_exportdb(update: Update, context):
         df['created_at'] = df['created_at'].apply(lambda x: datetime.fromisoformat(x).strftime("%d-%m-%Y %H:%M:%S"))
 
         # Tambahkan kolom URL
-        df['URL'] = "https://www.onimono.com/p/download.html?fileCode=" + df['file_code']
+        df['URL'] = "https://onimonodotcom.blogspot.com/p/download.html?fileCode=" + df['file_code']
 
         # Ganti nama kolom (header) ke bahasa Indonesia
         df = df.rename(columns={
