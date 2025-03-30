@@ -10,6 +10,9 @@ async def handle_download(update: Update, context):
         await update.message.reply_text("Gunakan perintah /download <file_code>")
         return
     
+    #Memberitahukan pengguna bahwa unduhan sedang diproses
+    await update.message.reply_text("Mengunduh file...")
+    
     file_code = context.args[0]
     print(f"File Code: {file_code}")
 
