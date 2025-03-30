@@ -228,7 +228,16 @@ async def handle_exportdb(update: Update, context):
         print(f"Args: {args}, Start Local: {start_local}, End Local: {end_local}, Text Filter: {text_filter}")
 
     except ValueError:
-        await update.message.reply_text("Format tanggal salah. Gunakan YYYYMMDD.")
+        await update.message.reply_text("Format tanggal tidak valid. Gunakan format YYYYMMDD.")
+        print(f"Args: {args}, Start Local: {start_local}, End Local: {end_local}, Text Filter: {text_filter}")
+    except TypeError:
+        await update.message.reply_text("Ada kesalahan dalam tipe data. Pastikan semua data sudah benar.")
+        print(f"Args: {args}, Start Local: {start_local}, End Local: {end_local}, Text Filter: {text_filter}")
+    except pd.errors.EmptyDataError:
+        await update.message.reply_text("Data yang diambil kosong.")
+        print(f"Args: {args}, Start Local: {start_local}, End Local: {end_local}, Text Filter: {text_filter}")
+    except pd.errors.ParserError:
+        await update.message.reply_text("Ada kesalahan dalam parsing data.")
         print(f"Args: {args}, Start Local: {start_local}, End Local: {end_local}, Text Filter: {text_filter}")
     except Exception as e:
         print("Error saat mengekspor database:", e)
